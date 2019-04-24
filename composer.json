@@ -1,0 +1,35 @@
+{
+    "name": "balfour/laravel-sms",
+    "description": "A library for sending SMS messages in Laravel using 3rd party adapters",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Matthew Goslett",
+            "email": "matthew@masterstart.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^5.7",
+        "masterstart/php-totalsend-sms": "^1.0",
+        "propaganistas/laravel-phone": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Balfour\\LaravelSMS\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Balfour\\LaravelSMS\\ServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
